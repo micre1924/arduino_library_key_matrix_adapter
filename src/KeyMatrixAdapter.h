@@ -17,7 +17,7 @@
 
 #endif
 
-class SMY_Keymatrix_Adapter {
+class KeyMatrixAdapter {
 public:
 	bool KeyPressed;
 	uint8_t

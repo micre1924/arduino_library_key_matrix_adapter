@@ -5,9 +5,9 @@
  Editor:	http://www.visualmicro.com
 */
 
-#include "keymatrix_adapter.h"
+#include "KeyMatrixAdapter.h"
 
-char SMY_Keymatrix_Adapter::GetCharFromKey()
+char KeyMatrixAdapter::GetCharFromKey()
 {
 	KeyPressed = false;
 	for (int r = 0; r < KeysInCol; r++) {
@@ -24,7 +24,7 @@ char SMY_Keymatrix_Adapter::GetCharFromKey()
 	SetRowPinsLow();
 	return '|';
 }
-void SMY_Keymatrix_Adapter::SetRowPinsLow()
+void KeyMatrixAdapter::SetRowPinsLow()
 {
 	for (int r = 0; r < KeysInCol; r++) {
 		digitalWrite(RowPins[r], 0);
